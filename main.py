@@ -1,6 +1,7 @@
 import os
 import pydicom
 import numpy as np
+
 import imageio
 
 # Path to the folder containing DICOM files

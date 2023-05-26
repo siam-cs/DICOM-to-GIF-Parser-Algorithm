@@ -12,6 +12,7 @@ output_folder = "C:/Users/user/Desktop/output"
 # Create the output folder if it doesn't exist
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
+    
 
 # Loop through all the directories in the input folder
 for root, dirs, files in os.walk(input_folder):
@@ -37,4 +38,9 @@ for root, dirs, files in os.walk(input_folder):
             output_path = os.path.join(output_dir, output_filename)
 
             # Save the DICOM file as a GIF file
-            imageio.imwrite(output_path, pixel_array)
+            imageio.imwrite(output_path, pixel_array) 
+
+
+
+
+
